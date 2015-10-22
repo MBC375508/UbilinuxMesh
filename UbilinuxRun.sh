@@ -7,7 +7,7 @@ sudo ifconfig wlan0 up
 
 echo ".... batmand ...."
 cd /
-sudo ./batmand/batmand -o 500 -s 10.42.0.1 wlan0
+sudo ./home/px4/batmand/batmand -o 500 -s 10.42.0.1 wlan0
 echo ".... mesh ...."
 
 sleep 0.5
@@ -33,5 +33,5 @@ echo ".... Result ...."
 sudo wpa_cli -iwlan0 status
 sudo ifconfig wlan0
 
-cd ros_catkin_ws/
+cd /home/px4/ros_catkin_ws/
 roslaunch mavros px4.launch
