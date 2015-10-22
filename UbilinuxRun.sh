@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo su
+exit
+
 clear
 echo "Setting up Edison Batmand mesh"
 
@@ -33,8 +35,6 @@ clear
 echo ".... Result ...."
 sudo wpa_cli -iwlan0 status
 sudo ifconfig wlan0
-
-exit
 
 cd ros_catkin_ws/
 roslaunch mavros px4.launch
