@@ -1,7 +1,4 @@
 #!/bin/bash
-sudo su
-exit
-
 clear
 echo "Setting up Edison Batmand mesh"
 
